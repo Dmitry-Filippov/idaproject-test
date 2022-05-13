@@ -15,30 +15,30 @@
 <body class="page">
   <main class="content">
     <section class="items-add">
-      <h2 class="items-add__title">Добавление товара</h2>
+      <h1 class="items-add__title">Добавление товара</h1>
       <form class="items-add__form">
-        <span class="items-add__span items-add__span_type_name">Наименование товара
+        <label class="items-add__span items-add__span_type_name">Наименование товара
           <div class="items-add__required"></div>
-        </span>
+        </label>
         <input class="items-add__input items-add__input_type_name" required type="text"
           placeholder="Введите наименование товара">
-        <span class="items-add__span items-add__span_type_about">Описание товара</span>
-        <input class="items-add__input items-add__input_type_about" type="text" placeholder="Введите описание товара">
-        <span class="items-add__span items-add__span_type_link">Ссылка на изображение товара
+        <label class="items-add__span items-add__span_type_about">Описание товара</label>
+        <textarea class="items-add__input items-add__input_type_about" placeholder="Введите описание товара"></textarea>
+        <label class="items-add__span items-add__span_type_link">Ссылка на изображение товара
           <div class="items-add__required"></div>
-        </span>
+        </label>
         <input class="items-add__input items-add__input_type_link" type="url" required placeholder="Введите ссылку">
-        <span class="items-add__span items-add__span_type_price">Цена товара
+        <label class="items-add__span items-add__span_type_price">Цена товара
           <div class="items-add__required"></div>
-        </span>
+        </label>
         <input class="items-add__input items-add__input_type_price" required type="number" placeholder="Введите цену">
         <button class="items-add__button" type="submit">Добавить товар</button>
       </form>
     </section>
     <section class="items-cards">
-      <button class="items-cards__select">По умолчанию
-        <div class="items-cards__select-cursor"></div>
-      </button>
+      <select class="items-cards__select">
+        <option>По умолчанию</option>
+      </select>
       <div class="items-cards__wrapper">
         <div class="items-cards__item">
           <img class="items-cards__img" src="./vendor/images/Rectangle 31.jpg" alt="фото товара">
